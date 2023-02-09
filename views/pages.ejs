@@ -1,0 +1,55 @@
+<%- include ("includes/header") %>
+
+<style>
+	.premium-section {
+		filter: blur(5px);
+	}
+	.premium {
+		position: fixed;
+		left: 30%;
+		top: 45%;
+		z-index: 100;
+		background-color: white;
+	}
+	.premium h1 {
+		font-size: 70px;
+	}
+	.premium p {
+		font-size: 26px;
+	}
+</style>
+
+<div class="premium">
+	<h1>Premium feature</h1>
+</div>
+
+<section class="premium-section">
+	<div class="gap gray-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row" id="page-contents">
+
+						<div class="col-md-3">
+							<%- include ("includes/left-sidebar") %>
+						</div>
+
+						<div class="col-md-6">
+
+							<div class="central-meta">
+								<div class="groups">
+									<span><i class="fa fa-file-text-o"></i> Your Liked Pages</span>
+								</div>
+								<ul class="liked-pages" id="all-pages"></ul>
+								<img src="public/blurs/pages.png">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%- include ("includes/footer") %>

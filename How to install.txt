@@ -1,0 +1,52 @@
+- Download and Install Node JS and Mongo DB
+
+- Start Mongo DB server by running the following command in "bin" folder where Mongo DB is installed:
+    > ./mongod
+    or
+    > mongod
+
+- Then open command prompt in this folder and run the following command:
+    > npm update
+    > npm install -g nodemon
+    > nodemon server.js
+
+- Then open your browser and enter the following address:
+    > http://localhost:3000/
+
+In premium version, you can get:
+
+- All features of free version
+        +
+1) Add youtube link in post
+2) Ticketing module
+3) Events module
+4) Add audio files in post
+5) Ban & delete user
+6) Filter abusive words
+7) Adult image validation
+8) Ban posts
+9) Upload stories for 24 hours
+10) Search (users, pages and groups)
+11) Email Confirmation
+12) Reset Password
+13) Create Friends
+14) Create Pages
+15) Create Groups
+16) Share posts
+17) Message encryption
+18) Private user-to-user chat
+19) People who viewed your profile
+20) Edit and delete post
+
+The price of premium version is just $20.
+
+Please send an email to support@adnan-tech.com with your following information:
+
+Name:
+Email:
+Country:
+Project: Social networking site in Node JS and Mongo DB
+
+We will send you a payment request. After the payment is paid, the source code will be emailed to you.
+
+Thank you.

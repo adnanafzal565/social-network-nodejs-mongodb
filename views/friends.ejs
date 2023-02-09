@@ -1,0 +1,65 @@
+<%- include ("includes/header") %>
+
+<style>
+	.premium-section {
+		filter: blur(5px);
+	}
+	.premium {
+		position: fixed;
+		left: 30%;
+		top: 45%;
+		z-index: 100;
+		background-color: white;
+	}
+	.premium h1 {
+		font-size: 70px;
+	}
+	.premium p {
+		font-size: 26px;
+	}
+</style>
+
+<div class="premium">
+	<h1>Premium feature</h1>
+</div>
+
+<section class="premium-section">
+	<div class="gap gray-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row" id="page-contents">
+
+						<div class="col-md-3">
+							<%- include ("includes/left-sidebar") %>
+						</div>
+
+						<div class="col-md-6">
+							<div class="central-meta">
+								<div class="frnds">
+
+									<div class="tab-content">
+										<div class="tab-pane active fade show" id="frends">
+
+											<ul class="nearby-contct" id="friends"></ul>
+
+											<img src="/public/blurs/friends.png">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<%- include ("includes/right-sidebar") %>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%- include ("includes/footer") %>
