@@ -148,6 +148,7 @@ Last change:  4/september/18
 
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
+
 @font-face {
     font-family: HoboStd;
     src: url('../fonts/HoboStd.ttf'), url('../fonts/HoboStd.eot');
@@ -776,8 +777,8 @@ header.sticky {
     display: inline-block;
     list-style: outside none none;
     margin-bottom: 0;
-    /*padding-left: 0;*/
-    /*vertical-align: middle;*/
+    padding-left: 0;
+    vertical-align: middle;
 }
 
 .top-area > ul > li {
@@ -2008,7 +2009,7 @@ li.post-comment .comet-avatar {
 .post-comt-box {
     display: inline-block;
     padding-left: 15px;
-    /*position: relative;*/
+    position: relative;
     width: 93%;
 }
 
@@ -4839,7 +4840,7 @@ canvas {
 }
 
 .top-area > ul.main-menu > li::after {
-    /*content: "";*/
+    content: "";
     font-family: fontawesome;
     font-size: 13px;
     position: absolute;

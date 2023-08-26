@@ -164,7 +164,6 @@
 
 		var formData = new FormData(form);
 		formData.append("accessToken", localStorage.getItem("accessToken"));
-		// formData.append("imgData", document.getElementById("post-img-preview").getAttribute("src"));
 		ajax.send(formData);
 
 		return false;
@@ -175,6 +174,7 @@
 		ajax.open("POST", "/getNewsfeed", true);
 
 		ajax.onreadystatechange = function() {
+
 			if (this.readyState == 4) {
 				if (this.status == 200) {
 					var response = JSON.parse(this.responseText);

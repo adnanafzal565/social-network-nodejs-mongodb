@@ -1003,7 +1003,6 @@ http.listen(3000, function () {
 				}]
 			}, function (error, user) {
 				if (user == null) {
-
 					bcrypt.genSalt(10, function(err, salt) {
 					    bcrypt.hash(password, salt, async function(err, hash) {
 					    	database.collection("users").insertOne({
@@ -1474,7 +1473,6 @@ http.listen(3000, function () {
 	                            console.log('File deleted!');
 	                        });
 	                    });
-						
 					} else {
 						result.json({
 							"status": "error",
@@ -1498,7 +1496,6 @@ http.listen(3000, function () {
 						"message": "User has been logged out. Please login again."
 					});
 				} else {
-
 					if (user.isBanned) {
 						result.json({
 							"status": "error",
@@ -1536,7 +1533,6 @@ http.listen(3000, function () {
 								}, async function (error, data) {
 
 									await functions.updateUser(user, profileImage, user.name);
-
 									result.json({
 										"status": "status",
 										"message": "Profile image has been updated.",
@@ -1551,7 +1547,6 @@ http.listen(3000, function () {
 	                            console.log('File deleted!');
 	                        });
 	                    });
-
 					} else {
 						result.json({
 							"status": "error",
@@ -1601,7 +1596,6 @@ http.listen(3000, function () {
 					}, async function (error, data) {
 
 						await functions.updateUser(user, user.profileImage, name);
-
 						result.json({
 							"status": "status",
 							"message": "Profile has been updated."
@@ -2304,7 +2298,6 @@ http.listen(3000, function () {
 						"message": "User has been logged out. Please login again."
 					});
 				} else {
-
 					if (user.isBanned) {
 						result.json({
 							"status": "error",
@@ -2626,7 +2619,6 @@ http.listen(3000, function () {
 									});
 
 								});
-
 							});
 
 						}
@@ -3981,6 +3973,5 @@ http.listen(3000, function () {
 			})
 			
         })
-
 	});
 });

@@ -13,6 +13,9 @@ body {
 .dropdown-toggle::after {
     display: none !important;
 }
+body {
+    font-family: Tahoma !important;
+}
 
 @charset "UTF-8";/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

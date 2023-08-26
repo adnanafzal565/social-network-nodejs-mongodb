@@ -213,10 +213,14 @@
 			}
 
 			if (confirm("Are you sure you want to boost this post ?")) {
-				stripe = Stripe(stripePublicKey)
-		        var elements = stripe.elements()
-		        cardElement = elements.create('card')
-		        cardElement.mount('#stripe-card-element')
+				try {
+					stripe = Stripe(stripePublicKey)
+			        var elements = stripe.elements()
+			        cardElement = elements.create('card')
+			        cardElement.mount('#stripe-card-element')
+			    } catch (exp) {
+			    	swal("Error", "Please enter your Stripe publishable key in server.js", "error")
+			    }
 
 		        document.getElementById("btnPayNow").style.display = ""
 			}
