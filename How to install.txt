@@ -1,0 +1,31 @@
+- Download and Install Node JS and Mongo DB
+
+- Start Mongo DB server by running the following command in "bin" folder where Mongo DB is installed:
+    > ./mongod
+    or
+    > mongod
+
+- Then open command prompt in this folder and run the following command:
+    > npm update
+    > npm install -g nodemon
+    > nodemon server.js
+
+- Then open your browser and enter the following address:
+    http://localhost:3000/
+
+- You can access admin panel from:
+    http://localhost:3000/admin
+
+- Change your email and password at line 47 in nodemailerObject.
+
+- Copy the file named "class.ImageFilter.php" at the root of this project, and paste it in your XAMPP htdocs or WAMP www folder.
+
+- Change your apache (PHP) server path in file named "add-post.js" in line 74 and "edit-post.js" in line 94.
+
+- Goto stripe.com and enter your secret and publishable keys in server.js variable:
+    const stripe = Stripe('secret_key')
+    const stripePublicKey = "publishable_key"
+
+If you face any problem, please feel free to contact us.
+
+Email: support@adnan-tech.com
