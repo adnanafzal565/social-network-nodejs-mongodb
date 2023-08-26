@@ -33,7 +33,7 @@ This project is developed in Node JS and Mongo DB. It has all the functionality 
 
 ## Features list
 
-![Social network in NodeJS and MongoDB](https://adnan-tech.com/uploads/social-networking-site-nodejs-mongodb.png)
+![Social network in NodeJS and MongoDB](https://adnan-tech.com/wp-content/uploads/2023/04/premium-social-networking-site-nodejs-mongodb.png)
 
 
 1. Login and registration
